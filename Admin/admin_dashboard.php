@@ -35,7 +35,7 @@
                             <td>".$row['email']."</td>
                             <td>".$row['role_name']."</td>
                             <td>
-                                <a href='approve_user.php?id=".$row['id']."' class='btn btn-success btn-sm'>Approve</a>
+                                <a href='approval_logic.php?id=".$row['id']."' class='btn btn-success btn-sm'>Approve</a>
                             </td>
                         </tr>";
                     }
