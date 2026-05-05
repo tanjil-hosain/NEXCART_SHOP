@@ -12,11 +12,16 @@ if(isset($_POST['register'])){
 
     $has_pass = password_hash($password , PASSWORD_DEFAULT);
 
-    $sql = ("INSERT INTO users (role_id, name, user_name, email, password, phone_number, address) VALUES ('$role_id', '$name', '$user_name', '$email', '$has_pass', '$phone', '$address')");
+    if ($role_id == ROLE_CUSTOMER){
+        $status = 1;
+    } else {
+        $status= 0;
+    }
+    $sql = ("INSERT INTO users (role_id, name, user_name, email, password, phone_number, address, status) VALUES ('$role_id', '$name', '$user_name', '$email', '$has_pass', '$phone', '$address', '$status')");
 
     if(mysqli_query($db, $sql)){
        header("location:register.php");
-       exit();s
+       exit();
 
     }
 
