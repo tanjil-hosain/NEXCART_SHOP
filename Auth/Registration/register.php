@@ -86,6 +86,7 @@ include('../../config/config.php');
                     <button type="submit" name ="register"class="btn btn-primary w-100">Register</button>
 
                 </form>
+                <p class="text-center mt-3">Already have an account? <a href=".././login/login.php">Login</a></p>
             </div>
 
         </div>

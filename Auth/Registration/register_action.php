@@ -15,7 +15,9 @@ if(isset($_POST['register'])){
     $sql = ("INSERT INTO users (role_id, name, user_name, email, password, phone_number, address) VALUES ('$role_id', '$name', '$user_name', '$email', '$has_pass', '$phone', '$address')");
 
     if(mysqli_query($db, $sql)){
-        echo "Success";
+       header("location:register.php");
+       exit();s
+
     }
 
 }
