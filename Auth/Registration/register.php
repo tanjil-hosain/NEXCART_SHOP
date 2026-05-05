@@ -1,23 +1,8 @@
-<!-- <?php
+ <?php
 include('../../config/config.php');
-?> -->
-
-<!-- <?php
-// $db= mysqli_connect("localhost", "root", "", "nexcart_shop");
-
-// if(!$db){
-//     die("Connection fail:". mysqli_connect_error());
-// }
-
-// session_start();
-// define('ROLE_SUPER_ADMIN', 1);
-// define('ROLE_ADMIN', 2);
-// define('ROLE_MANAGER', 3);
-// define('ROLE_SALESMAN', 4);
-// define('ROLE_SUPER', 5);
+?> 
 
 
-?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +22,7 @@ include('../../config/config.php');
             <div class="card shadow-lg p-4">
                 <h3 class="text-center mb-4">Registration Form</h3>
 
-                <form action="" method="POST">
+                <form action="register_action.php" method="POST">
 
                     <div class="mb-3">
                         <label class="form-label">Roles</label>
@@ -45,7 +30,7 @@ include('../../config/config.php');
                             <option value="" disabled selected>Select Role</option>
                             <?php
                             // Super Admin chara baki role fetch kora
-                            $roles = mysqli_query($db, "SELECT * FROM roles WHERE id != 1");
+                            $roles = mysqli_query($db , "SELECT * FROM roles WHERE id != 1");
                             while($role = mysqli_fetch_assoc($roles)) {
                                 echo "<option value='".$role['id']."'>".$role['role_name']."</option>";
                             }
