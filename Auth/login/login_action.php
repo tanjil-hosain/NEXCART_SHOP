@@ -19,7 +19,7 @@ if(isset($_POST['login'])){
                 $_SESSION['role_id'] = $user['role_id'];
 
                 if($user['role_id']== ROLE_SUPER_ADMIN){
-                    header("location: admin/dashboard.php");
+                    header("location: ../../Admin/admin_dashboard.php");
                 } else {
                     header("location: index.php");
                 }
