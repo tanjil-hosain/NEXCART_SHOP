@@ -1,5 +1,6 @@
  <?php
 include('../../config/config.php');
+
 ?> 
 
 
@@ -22,14 +23,14 @@ include('../../config/config.php');
             <div class="card shadow-lg p-4">
                 <h3 class="text-center mb-4">Login Please</h3>
 
-                <form action="register_action.php" method="POST">
+                <form action="login_action.php" method="POST">
 
 
 
                     <!-- Email -->
                     <div class="mb-3">
-                        <label class="form-label">Email address</label>
-                        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+                        <label class="form-label">Email or User name</label>
+                        <input type="text" name="email_name" class="form-control" placeholder="Enter username or  email" required>
                     </div>
 
                     <!-- Password -->
@@ -38,7 +39,7 @@ include('../../config/config.php');
                         <input type="password" name="password" class="form-control" placeholder="Enter password" required>
                     </div>         
                     <!-- Submit -->
-                    <button type="submit" name ="register"class="btn btn-primary w-100">Register</button>
+                    <button type="submit" name ="login"class="btn btn-primary w-100">login</button>
 
                 </form>
                 <p class="text-center mt-3">Don't have an account? <a href="../Registration/register.php">Register</a></p>
