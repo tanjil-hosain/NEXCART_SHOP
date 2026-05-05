@@ -1,3 +1,23 @@
+<!-- <?php
+include('../../config/config.php');
+?> -->
+
+<!-- <?php
+// $db= mysqli_connect("localhost", "root", "", "nexcart_shop");
+
+// if(!$db){
+//     die("Connection fail:". mysqli_connect_error());
+// }
+
+// session_start();
+// define('ROLE_SUPER_ADMIN', 1);
+// define('ROLE_ADMIN', 2);
+// define('ROLE_MANAGER', 3);
+// define('ROLE_SALESMAN', 4);
+// define('ROLE_SUPER', 5);
+
+
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +57,10 @@
                         <label class="form-label">Full Name</label>
                         <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
                     </div>
+                                        <div class="mb-3">
+                        <label class="form-label">User Name</label>
+                        <input type="text" name="u_name" class="form-control" placeholder="Enter your user name" required>
+                    </div>
 
                     <!-- Email -->
                     <div class="mb-3">
@@ -56,12 +80,16 @@
                         <input type="password" name="confirm_password" class="form-control" placeholder="Confirm password" required>
                     </div>
 
-                    <!-- Gender -->
-                    <div class="mb-3">
-                        <label class="form-label">Gender</label><br>
-                        <input type="radio" name="gender" value="Male"> Male
-                        <input type="radio" name="gender" value="Female" class="ms-3"> Female
+                   <div class="mb-3">
+                        <label class="form-label"> Phone Number</label>
+                        <input type="text" name="phone" class="form-control" placeholder="Phone Number" required>
                     </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Address</label>
+                        <input type="text" name="address" class="form-control" placeholder="Address" required>
+                    </div>
+                    
 
                     <!-- Terms -->
                     <div class="mb-3 form-check">
@@ -70,7 +98,7 @@
                     </div>
 
                     <!-- Submit -->
-                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                    <button type="submit" name ="register"class="btn btn-primary w-100">Register</button>
 
                 </form>
             </div>
