@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <style>
     /* Sidebar Main Container */
     #sidebar-wrapper {
@@ -83,7 +85,7 @@
 
     <div id="sidebar-wrapper">
     <div class="sidebar-heading text-center">
-        <i class="bi bi-rocket-takeoff-fill"></i> MAMA SHOP
+        <i class="bi bi-rocket-takeoff-fill"></i><span class="text-success">NEX</span><span>CART</span>
     </div>
     
     <div class="list-group list-group-flush">
